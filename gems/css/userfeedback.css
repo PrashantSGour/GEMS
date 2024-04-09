@@ -1,0 +1,33 @@
+:root{
+	--primary-color: #d63031;
+	--secondary-color: #636e72;
+	--font: 'Poppins', sans-serif;
+}
+#send
+{
+    background-color:#D32F2F ;
+    color: white;
+    padding: 7px 30px;
+    border: none;
+}
+#send:hover
+{
+    background-color: #636e72;
+    color: white;
+}
+textarea
+{
+ border-color: #D32F2F;
+}
+#subject
+{
+    height: 40px;
+    width: 100%;
+    background-color: rgba(255,255,255,0);
+    border-color: #d63031;
+}
+#subject option
+{
+    background-color: white;
+    color: red;
+}

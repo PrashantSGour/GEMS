@@ -1,0 +1,240 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
+
+:root {
+  --primary-color: #d63031;
+  --secondary-color: #636e72;
+  --font: 'Poppins', sans-serif;
+}
+
+
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+.btn{
+	padding: .6rem .8rem;
+	text-transform: uppercase;
+	font-family: var(--font);
+	background: var(--primary-color);
+	color: white;
+	font-size: 16px;
+	text-decoration: none;
+	outline: none;
+	border: 2px solid var(--primary-color);
+	transition: .3s;
+	cursor: pointer;
+}
+.btn:hover{
+	background: transparent;
+}
+body{
+	background: rgb(38, 38, 38);
+	font-family: var(--font);
+}
+
+nav{
+	position: fixed;
+	width: 100vw;
+	height: 60px;
+	border-top: .5rem solid var(--primary-color);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	/* z-index: 999999; */
+}
+
+.logo{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 55px;
+	width: 15%;
+	font-weight: 700;
+	background:#D32F2F;
+}
+
+.logo::before{
+	content: "GE";
+	color: white;
+}
+.logo::after{
+	content: "MS";
+	color: black;
+}
+
+ul{
+	display: flex;
+	align-items: center;
+	height: 60px;
+}
+
+ul a{
+	text-decoration: none;
+	color: white;
+	margin: 0 2rem;
+	text-transform: uppercase;
+	font-family: var(--font);
+	font-weight: 700;
+	font-size: 16px;
+}
+ul li{
+	list-style: none;
+}
+ul a:hover{
+	color: var(--primary-color);
+}
+
+/* body 
+{
+  background-image: url("images/guy-stance-dark-room.jpg");
+  background-size: cover;
+  background-position: center center;
+} */
+
+#nav {
+  height: 100vh;
+  background-color: rgba(38.8, 43.1, 44.7, 0.5);
+}
+
+/* #gems {
+  text-transform: uppercase;
+  text-align: center;
+  padding: 20px 0px;
+  color: white;
+  border-bottom: 2px solid white;
+  width: 100%;
+} */
+
+#admin_img {
+  height: 40px;
+  width: 40px;
+  background-color: white;
+  object-position: center center;
+}
+
+ul {
+  list-style-type: none;
+  margin-left: -10%;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+}
+
+ul li {
+  text-align: center;
+  padding: 10px 0px;
+  margin: 25px 0px;
+  /* background-color: #d63031; */
+  transition: background-color 0.3s ease;
+  animation: slideIn 0.5s forwards;
+  opacity: 0;
+}
+
+ul li:hover {
+  /* background-color: white; */
+  color: var(--primary-color);
+  transition: background-color 0.3s ease;
+}
+
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  50%
+  {
+    opacity:0.5;
+    transform: translateY(-50%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+h5 {
+  border-bottom: 1px solid #636e72;
+  color: var(--secondary-color);
+  text-transform: uppercase;
+  padding-bottom: 10px;
+  padding-left: 5px;
+  transition: color 0.3s ease;
+}
+
+h5:hover {
+  /* color: var(--secondary-color); */
+  transition: color 0.3s ease;
+}
+
+#info {
+  color: var(--secondary-color);
+  text-transform: uppercase;
+  padding: 10px 5px;
+  transition: color 0.3s ease;
+}
+
+p:hover {
+  /* color: var(--secondary-color); */
+  transition: color 0.3s ease;
+}
+
+#box {
+  background-color: rgba(256, 256, 256, 0.8);
+  margin: 70px 0px;
+  color: var(--secondary-color);
+  width: 300px;
+  padding: 20px 5px;
+  box-shadow: 5px 5px 10px black;
+  border-radius: 10px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#box:hover {
+  background-color: rgba(83.9, 18.8, 19.2,0.6);
+  transform: scale(0.9);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+#admin
+{
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  margin-left:8rem;
+  background-color: white;
+  padding: 5px;
+  margin-top: 20px;
+}
+
+#details
+{
+  color:white;
+  text-transform: uppercase;
+  margin-top: 18px;
+  font-weight: bold;
+}
+
+/* #table
+{
+ background-color:  rgba(256, 256, 256, 0.8);
+}
+tr :hover
+{
+  background-color: rgba(83.9, 18.8, 19.2,0.6);
+}
+th
+{
+  color: var(--secondary-color);
+}
+th:hover
+{
+  color: black;
+  border: none;
+}
+#trainers
+{
+  color: white;
+} */
